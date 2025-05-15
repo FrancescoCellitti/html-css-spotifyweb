@@ -1,0 +1,19 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+main {
+    height: 100vh;
+}
+
+.top {
+    background-color: red;
+    height: calc(100% - 50px);
+}
+
+.bottom {
+    background-color: black;
+    height: 50px;
+}
