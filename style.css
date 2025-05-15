@@ -9,21 +9,42 @@ main {
 }
 
 .top {
-    background-color: red;
     height: calc(100% - 50px);
+    display: flex;
+    position: relative;
 }
 
 .bottom {
     background-color: black;
     height: 50px;
 }
-.left{
-    width:230px;
-    height: 100%;
+
+.left {
+    width: 230px;
     background-color: green;
 }
-.head{
+
+.right {
+    left: 230px;
+    top: 90px;
+    width: 100%;
+    background-color: blue;
+    overflow: hidden;
+    overflow-y: auto;
+
+}
+
+.head {
     height: 90px;
-    width: calc(100% - 230px);
-    background-color: yellow;
+    width: 100%;
+    background-color: rgba(255, 255, 0, 0.229);
+    position: absolute;
+    position: sticky;
+    top: 0;
+}
+@media  screen and (max-width:400px) {
+    .left{
+        width:50px;
+    }
+    
 }
