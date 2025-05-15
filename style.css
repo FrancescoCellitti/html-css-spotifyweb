@@ -41,6 +41,16 @@ main {
     position: absolute;
     position: sticky;
     top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    button{
+        background-color: transparent;
+        color: white;
+        border: 1px solid white;
+        padding:10px 20px;
+        border-radius: 35px;
+    }
 }
 @media  screen and (max-width:400px) {
     .left{
