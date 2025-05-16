@@ -207,7 +207,7 @@ main {
     }
 }
 
-@media screen and (max-width:400px) {
+@media screen and (min-width:400px) {
     .left {
         width: 50px;
 
