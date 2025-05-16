@@ -196,6 +196,7 @@ main {
         border-radius: 35px;
     }
 }
+
 @media screen and (max-width:768px) {
     .right {
         .container {
@@ -205,6 +206,7 @@ main {
         }
     }
 }
+
 @media screen and (max-width:400px) {
     .left {
         width: 50px;
@@ -258,7 +260,4 @@ main {
     }
 
 }
-
-
-
 
