@@ -26,6 +26,9 @@ main {
 .left {
     width: 230px;
     background-color: green;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 
     .logo {
         max-width: 100%;
@@ -35,11 +38,48 @@ main {
 
         .sm {
             display: none;
-            width: 20px;
-            height: 20px;
         }
     }
+
+    .utili {
+        ul {
+            padding-bottom: 10px;
+
+            li {
+                display: flex;
+                padding-left: 10px;
+                gap: 5px;
+
+                img {
+                    width: 20px;
+                    height: 20px;
+                }
+            }
+        }
+
+        li:hover {
+            border-left: 2px solid #acfc2f;
+        }
+    }
+
+    .playlist {
+        padding-left: 10px;
+
+        ul {
+
+            li {
+                vertical-align: auto;
+                display: flex;
+                padding: 5px 0;
+                gap: 10px;
+
+            }
+        }
+
+    }
+    
 }
+
 
 .right {
     left: 230px;
@@ -82,16 +122,34 @@ main {
             align-items: center;
 
             margin: 2px 0 0 0;
-            .lg{
+
+            .lg {
                 display: none;
             }
 
             .sm {
                 display: block;
-
-
+                width: 20px;
+                height: 20px;
+                margin-top: 5px;
             }
         }
+
+        .utili {
+            padding-top: 20px;
+
+            ul {
+                li {
+                    span {
+                        display: none;
+                        margin-top: 10px;
+                    }
+                }
+            }
+        }
+    }
+    .playlist{
+        display: none;
     }
 
 }
