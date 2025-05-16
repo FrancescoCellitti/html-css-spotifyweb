@@ -12,6 +12,11 @@ main {
     height: 100vh;
 }
 
+.col-6 {
+    width: calc(100%/12*2);
+
+}
+
 .top {
     height: calc(100% - 50px);
     display: flex;
@@ -77,38 +82,44 @@ main {
         }
 
     }
-    .bot-side{
-        padding-left:10px;
-        .download{
+
+    .bot-side {
+        padding-left: 10px;
+
+        .download {
             display: flex;
             margin-bottom: 5px;
             gap: 5px;
+
             img {
-                    width: 20px;
-                    height: 20px;
-                }
+                width: 20px;
+                height: 20px;
+            }
 
         }
-        hr{
+
+        hr {
             max-width: 80%;
             margin: 0;
-            border:1px solid red;
+            border: 1px solid red;
             border-radius: 10px;
         }
-        .profile{
+
+        .profile {
             display: flex;
-            margin:5px 0;
+            margin: 5px 0;
             gap: 5px;
+
             img {
-                    width: 20px;
-                    height: 20px;
-                    background-color: gray;
-                    border-radius: 50%;
-                }
+                width: 20px;
+                height: 20px;
+                background-color: gray;
+                border-radius: 50%;
+            }
 
         }
     }
-    
+
 }
 
 
@@ -119,6 +130,50 @@ main {
     background-color: blue;
     overflow: hidden;
     overflow-y: auto;
+
+    .generi {
+        max-width: 80%;
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+
+        ul {
+            display: flex;
+            list-style: none;
+            gap: 20px;
+            margin: 10px 0;
+            flex-wrap: wrap;
+
+            li {
+                border-bottom: 10px solid transparent;
+            }
+        }
+
+        li:hover {
+            border-bottom: 3px solid green;
+        }
+
+    }
+
+    .container {
+        padding: 10px;
+
+        h1 {
+            margin-left: 10px;
+        }
+
+        .row {
+            display: flex;
+            flex-wrap: wrap;
+
+
+            .card {
+                text-align: center;
+                padding: 10px;
+            }
+        }
+    }
+
 
 }
 
@@ -139,6 +194,16 @@ main {
         border: 1px solid white;
         padding: 10px 20px;
         border-radius: 35px;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .right {
+        .container {
+            .col-6 {
+                width: calc(100%/4);
+            }
+        }
     }
 }
 
@@ -179,8 +244,20 @@ main {
             }
         }
     }
-    .playlist, .bot-side{
+
+    .playlist,
+    .bot-side {
         display: none;
     }
 
+    .right {
+        .container {
+            
+            .col-6 {
+                width: calc(100%/2);
+            }
+        }
+    }
+
 }
+
