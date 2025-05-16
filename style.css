@@ -77,6 +77,37 @@ main {
         }
 
     }
+    .bot-side{
+        padding-left:10px;
+        .download{
+            display: flex;
+            margin-bottom: 5px;
+            gap: 5px;
+            img {
+                    width: 20px;
+                    height: 20px;
+                }
+
+        }
+        hr{
+            max-width: 80%;
+            margin: 0;
+            border:1px solid red;
+            border-radius: 10px;
+        }
+        .profile{
+            display: flex;
+            margin:5px 0;
+            gap: 5px;
+            img {
+                    width: 20px;
+                    height: 20px;
+                    background-color: gray;
+                    border-radius: 50%;
+                }
+
+        }
+    }
     
 }
 
@@ -148,7 +179,7 @@ main {
             }
         }
     }
-    .playlist{
+    .playlist, .bot-side{
         display: none;
     }
 
