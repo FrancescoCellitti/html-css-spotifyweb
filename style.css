@@ -349,7 +349,7 @@ main {
                 background-color: grey;
 
                 .minutaggio {
-                    max-width: 10%;
+                    max-width: 50%;
                     border: 2px solid;
                     border-radius: 2px;
                     position: relative;
