@@ -232,7 +232,8 @@ main {
         }
 
     }
-    .card:hover{
+
+    .card:hover {
         cursor: pointer;
     }
 
@@ -397,6 +398,7 @@ main {
 
 
 
+
     .bottom-right {
         color: white;
         display: flex;
@@ -434,11 +436,13 @@ main {
                 color: greenyellow;
 
             }
-            i:hover{
+
+            i:hover {
                 cursor: pointer;
             }
-    }
+        }
 
+    }
 }
 
 @media screen and (max-width:768px) {
@@ -521,6 +525,5 @@ main {
             display: none;
         }
     }
-
 
 }
