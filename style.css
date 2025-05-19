@@ -347,12 +347,12 @@ main {
                 margin-top: 10px;
                 border-radius: 5px;
                 background-color: grey;
-                position: relative;
 
                 .minutaggio {
                     max-width: 10%;
                     border: 2px solid;
                     border-radius: 2px;
+                    position: relative;
                 }
 
                 .pallino {
@@ -361,9 +361,9 @@ main {
                     background-color: white;
                     border-radius: 50%;
                     position: absolute;
-                    left: 35px;
-                    bottom: -4px;
-                    display: none;
+                    transform: translate(-50%, -50%);
+                    left:100%;
+                    display:none;
                 }
 
             }
