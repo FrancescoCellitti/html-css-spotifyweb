@@ -215,16 +215,23 @@ main {
     background-color: black;
     height: 90px;
     display: flex;
-    justify-content: space-between;
+     justify-content: space-between;
     color: #ccc;
 
+    .bottom-left,
+    .bottom-center,
+    .bottom-right {
+        width: 33%;
+    }
+
     .bottom-left {
+        border: 1px dashed red;
         display: flex;
         align-items: center;
 
         .brano {
             line-height: 10px;
-            margin:0 10px
+            margin: 0 10px
         }
 
         img {
@@ -232,9 +239,77 @@ main {
             height: 40px;
             margin: 20px 10px;
         }
-        i{
+
+        i {
             margin: 0 5px;
         }
+    }
+
+    .bottom-center {
+        border: 1px dashed red;
+        text-align: center;
+
+        .control {
+            display: flex;
+            justify-content: center;
+        }
+
+        ul {
+            display: flex;
+            list-style: none;
+            gap: 15px;
+
+            li {
+
+                margin-top: 20px;
+            }
+
+            ul:first-child {
+                margin-left: 0px;
+            }
+        }
+
+        .tempo {
+            display: flex;
+
+            .slider {
+                width: 80%;
+                height: 2px;
+                margin: 0 auto;
+                margin-top: 10px;
+                border-radius: 5px;
+                background-color: grey;
+                position: relative;
+
+                .minutaggio {
+                    max-width: 10%;
+                    border: 2px solid;
+                    border-radius: 2px;
+                }
+                .pallino{
+                    width: 10px;
+                    height:10px;
+                    background-color: white;
+                    border-radius: 50%;
+                    position: absolute;
+                    left: 30px;
+                    bottom:-3px;
+                    display: none;
+                }
+
+            }
+
+            span {
+                margin: 2px 5px;
+            }
+        }
+
+
+
+    }
+
+    .bottom-right {
+        border: 1px dashed red;
     }
 
 }
