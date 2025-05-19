@@ -18,7 +18,7 @@ main {
 }
 
 .top {
-    height: calc(100% - 50px);
+    height: calc(100% - 90px);
     display: flex;
     position: relative;
 }
@@ -215,17 +215,11 @@ main {
     background-color: black;
     height: 90px;
     display: flex;
-     justify-content: space-between;
+    justify-content: space-between;
     color: #ccc;
 
-    .bottom-left,
-    .bottom-center,
-    .bottom-right {
-        width: 33%;
-    }
 
     .bottom-left {
-        border: 1px dashed red;
         display: flex;
         align-items: center;
 
@@ -246,7 +240,8 @@ main {
     }
 
     .bottom-center {
-        border: 1px dashed red;
+        width: 33%;
+
         text-align: center;
 
         .control {
@@ -264,9 +259,6 @@ main {
                 margin-top: 20px;
             }
 
-            ul:first-child {
-                margin-left: 0px;
-            }
         }
 
         .tempo {
@@ -286,14 +278,15 @@ main {
                     border: 2px solid;
                     border-radius: 2px;
                 }
-                .pallino{
+
+                .pallino {
                     width: 10px;
-                    height:10px;
+                    height: 10px;
                     background-color: white;
                     border-radius: 50%;
                     position: absolute;
                     left: 30px;
-                    bottom:-3px;
+                    bottom: -3px;
                     display: none;
                 }
 
@@ -309,7 +302,33 @@ main {
     }
 
     .bottom-right {
-        border: 1px dashed red;
+        color: white;
+        display: flex;
+        justify-content: flex-end;
+        gap: 5px;
+        align-items: center;
+
+        ul {
+            list-style: none;
+            display: flex;
+            gap: 5px;
+        }
+
+        .slider {
+            width: 50px;
+            height: 2px;
+            margin-bottom: 2px;
+            border-radius: 5px;
+            background-color: grey;
+            margin-right: 5px;
+
+            .minutaggio {
+                max-width: 10%;
+                border: 2px solid;
+                border-radius: 2px;
+            }
+
+        }
     }
 
 }
@@ -324,7 +343,7 @@ main {
     }
 }
 
-@media screen and (max-width:400px) {
+@media screen and (max-width:600px) {
     .left {
         width: 50px;
 
