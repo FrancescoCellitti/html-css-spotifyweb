@@ -160,9 +160,37 @@ main {
 
     .container {
         padding: 10px;
+        .icona{
+            display: none;
+        }
 
-        img {
-            margin-top: 10px;
+        .centrata:hover{
+            cursor: pointer;
+            img{
+                opacity: 50%;
+            }
+
+            .icona {
+                display: block;
+                background-color: rgba(0, 0, 0, 0.208) ;
+            }
+        }
+
+        .centrata {
+            position: relative;
+
+            img {
+                margin-top: 10px;
+            }
+
+            .icona {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                color: #ccc;
+
+            }
         }
 
         h1 {
@@ -189,7 +217,8 @@ main {
             color: white;
         }
 
-        p, sub {
+        p,
+        sub {
             color: #ccc;
         }
 
