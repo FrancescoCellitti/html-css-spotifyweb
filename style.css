@@ -64,6 +64,8 @@ main {
 
         li:hover {
             border-left: 2px solid #acfc2f;
+            cursor: pointer;
+
         }
     }
 
@@ -120,6 +122,11 @@ main {
         }
     }
 
+    span:hover,
+    li:hover {
+        color: white;
+        cursor: pointer;
+    }
 }
 
 
@@ -128,7 +135,6 @@ main {
     top: 90px;
     width: 100%;
     background-color: #141922;
-    ;
     overflow: hidden;
     overflow-y: auto;
 
@@ -154,25 +160,28 @@ main {
 
         li:hover {
             border-bottom: 3px solid green;
+            cursor: pointer;
         }
 
     }
 
     .container {
         padding: 10px;
-        .icona{
+
+        .icona {
             display: none;
         }
 
-        .centrata:hover{
+        .centrata:hover {
             cursor: pointer;
-            img{
+
+            img {
                 opacity: 50%;
             }
 
             .icona {
                 display: block;
-                background-color: rgba(0, 0, 0, 0.208) ;
+                background-color: rgba(0, 0, 0, 0.208);
             }
         }
 
@@ -223,6 +232,9 @@ main {
         }
 
     }
+    .card:hover{
+        cursor: pointer;
+    }
 
     .circle {
 
@@ -241,6 +253,7 @@ main {
     background-color: #080b12a7;
     position: absolute;
     position: sticky;
+    z-index: 3;
     top: 0;
     display: flex;
     align-items: center;
@@ -252,6 +265,13 @@ main {
         border: 1px solid white;
         padding: 10px 20px;
         border-radius: 35px;
+        margin-left: 15px;
+    }
+
+    button:hover {
+        font-size: 14px;
+        margin-left: 5px;
+        cursor: pointer;
     }
 }
 
@@ -269,7 +289,7 @@ main {
 
         .brano {
             line-height: 10px;
-            margin: 0 10px
+            margin: 0 10px 0 0;
         }
 
         img {
@@ -280,6 +300,17 @@ main {
 
         i {
             margin: 0 5px;
+        }
+
+        sub:hover {
+            color: white;
+            text-decoration: underline;
+            cursor: pointer;
+        }
+
+        i:hover {
+            color: white;
+            cursor: pointer;
         }
     }
 
@@ -329,8 +360,8 @@ main {
                     background-color: white;
                     border-radius: 50%;
                     position: absolute;
-                    left: 30px;
-                    bottom: -3px;
+                    left: 35px;
+                    bottom: -4px;
                     display: none;
                 }
 
@@ -341,9 +372,30 @@ main {
             }
         }
 
+        i:hover {
+            font-size: 30px;
+            cursor: pointer;
+
+        }
+
+        .slider:hover {
+            cursor: pointer;
+
+            .minutaggio {
+                color: greenyellow;
+
+            }
+
+            .pallino {
+                display: block;
+
+            }
+        }
 
 
     }
+
+
 
     .bottom-right {
         color: white;
@@ -374,6 +426,17 @@ main {
             }
 
         }
+
+        .slider:hover {
+            cursor: pointer;
+
+            .minutaggio {
+                color: greenyellow;
+
+            }
+            i:hover{
+                cursor: pointer;
+            }
     }
 
 }
@@ -386,6 +449,7 @@ main {
             }
         }
     }
+
 }
 
 @media screen and (max-width:600px) {
@@ -457,5 +521,6 @@ main {
             display: none;
         }
     }
+
 
 }
