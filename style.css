@@ -27,11 +27,13 @@ main {
 
 .left {
     width: 230px;
-    background-color: green;
+    background-color: black;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     overflow: hidden;
+    color: #ccc;
+
 
     .logo {
         max-width: 100%;
@@ -99,7 +101,7 @@ main {
         hr {
             max-width: 80%;
             margin: 0;
-            border: 1px solid red;
+            border: 1px solid #cccccc5f;
             border-radius: 10px;
         }
 
@@ -125,7 +127,8 @@ main {
     left: 230px;
     top: 90px;
     width: 100%;
-    background-color: blue;
+    background-color: #141922;
+    ;
     overflow: hidden;
     overflow-y: auto;
 
@@ -144,8 +147,10 @@ main {
 
             li {
                 border-bottom: 10px solid transparent;
+                color: #ccc;
             }
         }
+
 
         li:hover {
             border-bottom: 3px solid green;
@@ -178,6 +183,16 @@ main {
                 padding: 10px;
             }
         }
+
+        h1,
+        h3 {
+            color: white;
+        }
+
+        p, sub {
+            color: #ccc;
+        }
+
     }
 
     .circle {
@@ -194,7 +209,7 @@ main {
 .head {
     height: 90px;
     width: 100%;
-    background-color: rgba(255, 255, 0, 0.229);
+    background-color: #080b12a7;
     position: absolute;
     position: sticky;
     top: 0;
@@ -212,7 +227,7 @@ main {
 }
 
 .bottom {
-    background-color: black;
+    background-color: #282828;
     height: 90px;
     display: flex;
     justify-content: space-between;
@@ -312,6 +327,7 @@ main {
             list-style: none;
             display: flex;
             gap: 5px;
+            margin: 5px;
         }
 
         .slider {
@@ -392,6 +408,24 @@ main {
             .col-6 {
                 width: calc(100%/2);
             }
+        }
+    }
+
+    .bottom-center {
+        i {
+            font-size: 80%;
+        }
+    }
+
+    .bottom-left {
+        i {
+            display: none;
+        }
+    }
+
+    .bottom-right {
+        .slider {
+            display: none;
         }
     }
 
